@@ -3,17 +3,31 @@ body {
     overflow-x: hidden;
 }
 
+.ntext {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.svg {
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
 .navbutton:hover {
     background-color: #1a202c;
     color: white;
 
 }
 
+
+
 .navbutton {
     padding: 10px;
     color: #717d96;
     text-decoration: none;
     width: 100%;
+
 
 }
 
