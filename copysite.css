@@ -1,26 +1,44 @@
-nav {
+body {
+    margin: 0px;
+}
+
+.navbutton:hover {
+    background-color: #1a202c;
+}
+
+.navbutton {
+    border-radius: 5px;
     padding: 1vw 2vw;
     font-weight: 600;
     border: 2px solid rgb(38, 38, 110);
-    border-radius: 5px;
 }
 
-nav:hover {
-    background-color: #2d3648;
-    color: white;
-}
 
 footer {
     background-color: #1a202c;
     height: 300px;
-    margin: 0px;
-    padding: 0px;
+    color: white;
+    display: flex;
 }
 
 .y {
     color: white;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 .z {
-    height: 2000px;
+    height: 500px;
+}
+
+.xxx {
+    align-content: center;
+    width: 20px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
