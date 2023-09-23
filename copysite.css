@@ -12,7 +12,9 @@ nav:hover {
 
 footer {
     background-color: #1a202c;
-    height: 20px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .y {
