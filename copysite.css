@@ -1,23 +1,44 @@
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .navbutton:hover {
     background-color: #1a202c;
+    color: white;
+
 }
 
 .navbutton {
-    border-radius: 5px;
-    padding: 1vw 2vw;
-    font-weight: 600;
-    border: 2px solid rgb(38, 38, 110);
+    padding: 10px;
+    color: #717d96;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.nav {
+    background-color: #e2e7f0;
+    border: black solid;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+
 }
 
 
 footer {
     background-color: #1a202c;
-    height: 300px;
+    height: 200px;
     color: white;
+    display: flex;
+}
+
+.h2title1 {}
+
+.jouwgoofske {
     display: flex;
 }
 
@@ -29,16 +50,32 @@ footer {
     padding: 10px;
 }
 
-.z {
-    height: 500px;
-}
+.x {}
+
+.xx {}
 
 .xxx {
-    align-content: center;
-    width: 20px;
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    display: inline-block;
+    padding: 20px;
+    color: #a0abc0;
+
+
+
+}
+
+.xxxx {
+    padding-left: 500px;
+    padding-top: 60px;
+}
+
+
+
+
+.text1 {
+    color: #484f5f;
+}
+
+.text12 {
+    display: block;
+    margin: 30px;
 }
