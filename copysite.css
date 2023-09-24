@@ -3,21 +3,81 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    margin-left: 20px;
+}
+
 .ntext {
     display: inline-block;
     margin: 0px;
     padding: 0px;
 }
 
+
+
+.bestellen {
+    text-align: center;
+    background-color: #2d3648;
+    color: white;
+    width: 200px;
+    padding: 20px;
+
+}
+
+.bestellen:hover {
+    text-align: center;
+    background-color: #2d3648;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    align-content: none;
+}
+
+.naamproductfoto {
+    border: solid black 2px;
+    margin-bottom: 15px;
+    width: 350px;
+}
+
+.naamproducttitel {
+    font-size: 35px;
+}
+
+.naamproduct {
+    padding-left: 50px;
+    margin-bottom: 20px;
+    Border-bottom: solid #dcdde0 2px;
+    margin-left: 0px;
+
+}
+
 .svg {
     margin-top: 0px;
     margin-right: 5px;
+    position: relative;
+    top: 7px;
 }
 
 .navbutton:hover {
     background-color: #1a202c;
     color: white;
 
+}
+
+.navbutton:hover>.svg-dark {
+    display: none;
+}
+
+.navbutton:hover>.svg-light {
+    display: inline-block;
+}
+
+.svg-dark {
+    display: inline-block;
+}
+
+.svg-light {
+    display: none;
 }
 
 
@@ -48,9 +108,9 @@ footer {
     height: 200px;
     color: white;
     display: flex;
+    margin: 0px;
 }
 
-.h2title1 {}
 
 .jouwgoofske {
     display: flex;
@@ -78,7 +138,7 @@ footer {
 }
 
 .xxxx {
-    padding-left: 500px;
+    padding-left: 400px;
     padding-top: 60px;
 }
 
@@ -92,4 +152,84 @@ footer {
 .text12 {
     display: block;
     margin: 30px;
+}
+
+.plusmin1 {
+    display: flex;
+}
+
+.plusmin {
+    background-color: #e2e7f0;
+    margin-right: 40px;
+
+}
+
+.h3plusmin {
+    text-align: center;
+}
+
+.delen {
+    margin-right: 25px;
+
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+.relatedp {
+    background-color: #e2e7f0;
+    margin-top: -70px;
+    text-align: center;
+    display: flex;
+
+}
+
+.omschrijvingtitel {
+    font-size: 35px;
+}
+
+.h2title3 {
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 70px;
+}
+
+.h1relatedsection {
+    background-color: #e2e7f0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+    font-size: 35px;
+
+}
+
+.lastone {
+    background-color: #e2e7f0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.product1 {
+    width: 20px;
+}
+
+.image1 {
+    width: 360px;
+}
+
+.xxlink {
+    align-content: none;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.xxlink:hover {
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
