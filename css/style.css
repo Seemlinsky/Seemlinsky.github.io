@@ -493,7 +493,7 @@ input[type="radio"] {
 #chat-window {
     position: fixed;
     bottom: 3vh;
-    left: 0vw;
+    right: -1vw;
     font-size: 1.2rem;
     background-color: #0F1923;
     padding: 10px 20px;
