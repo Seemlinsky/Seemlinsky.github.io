@@ -1,0 +1,709 @@
+body {
+    margin: 0;
+}
+
+.PageContent {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.HeaderSection {
+    height: 400px;
+    background-image: url("../../assets/valorant_dark.png");
+    background-position: center;
+    background-position-y: 30%;
+}
+
+.HeaderTitle {
+    position: relative;
+    font-family: "TitleFont";
+    font-size: 3em;
+    color: white;
+}
+
+
+.HeaderTitle::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1em;
+    width: 100%;
+    border-bottom: white solid 2px;
+    border-right: white solid 2px;
+    transform: skewX(-30deg);
+    left: 30px;
+    top: 10px;
+}
+
+.HeaderContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderText {
+    width: 45%;
+    font-family: "DefaultFont";
+    color: white;
+    margin: 45px 0px auto 0px;
+    text-align: right;
+}
+
+.AgentSection {
+    height: 400px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+
+.agentContent {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.AgentCarousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AgentBanner {
+    height: 30vw;
+    width: 16vw;
+    background-color: #0F1923;
+    border-radius: 5%;
+}
+
+.OmenBannerImage {
+    background-position-y: 0%;
+    background-image: url("https://cdn.discordapp.com/attachments/164022184740651008/1160492876694818916/valorant-weapon-skin-elderflame-vandal-variant-3-dark.png?ex=6534dc36&is=65226736&hm=6bf1160bb82b7fae45c96005de4d9b9c41a86f97566f35df84f8605f4777c5f2&");
+}
+
+.ReynaBannerImage {
+    background-position-y: 0%;
+    background-image: url("https://cdn.discordapp.com/attachments/164022184740651008/1160494136126885968/valorant-weapon-skin-reaver-vandal-variant-1-red.png?ex=6534dd62&is=65226862&hm=2ba194db7813b2d2568e435d0b6262b35b05776a60ad01eea97b2af2a0631084&");
+}
+
+.ViperBannerImage {
+    background-position-y: 0%;
+    background-image: url("https://media.discordapp.net/attachments/164022184740651008/1160496037883019424/valorant-weapon-skin-prime-vandal-variant-3-yellow.png?ex=6534df28&is=65226a28&hm=a3667670523243288e3a766fc9d0f5759a025c7cf31acb05d6776d64cd7c8b8d&=&width=375&height=375");
+}
+
+.titelbestsellers {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 80px;
+    font-family: 'TitleFont';
+}
+
+.AgentBannerImage {
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    border: 2px #ff4655 solid;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+.RatingBox {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 0px;
+}
+
+.star5 {
+    margin: 0px 0px 0px 5px;
+    color: white;
+}
+
+.star1 {
+    margin: 0px 0px 0px 5px;
+    color: white;
+}
+
+.star5:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+:root {
+    --main-bg-color-grey: #282828;
+    --main-bg-color-white: #ece8e1;
+    --main-bg-color-orange: #ff4655;
+}
+
+
+.section_title {
+    color: var(--main-bg-color-white);
+    position: relative;
+    padding: 10px;
+    border: 2px solid var(--main-bg-color-grey);
+    text-decoration: none;
+}
+
+.section_title_text {
+    background-color: var(--main-bg-color-grey);
+    color: var(--main-bg-color-white);
+    margin: 0px;
+    padding: 10px 30px;
+    font-family: 'titleFont';
+    font-weight: 1;
+}
+
+.section_title:hover {
+    border: 2px solid var(--main-bg-color-orange);
+    transition: all 0.4s ease-in-out;
+}
+
+.section_title:hover>.section_title_text {
+    background-color: var(--main-bg-color-orange);
+    transition: all 0.4s ease-in-out;
+}
+
+.section_form_text {
+    width: 100%;
+    border: none;
+}
+
+.FormContent {
+    padding-top: 50px;
+    font-family: "DefaultFont";
+    margin-bottom: 1vw;
+}
+
+.headerbuttoncontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.button1 {
+    font-size: 0.8em;
+}
+
+@font-face {
+    font-family: DefaultFont;
+    src: url("../../fonts/Valorant_Font_Default.ttf");
+}
+
+@font-face {
+    font-family: TitleFont;
+    src: url("../../fonts/Valorant_Font_Title.ttf");
+}
+
+#contactForm {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
+
+
+}
+
+label {
+    font-weight: bold;
+    color: #2D3748;
+    font-family: 'TitleFont'
+}
+
+.label1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+@media only screen and (max-width: 844px) {
+    .row1 {
+        flex-direction: column
+    }
+
+    .goofy4 {
+        flex-direction: column !important;
+    }
+
+    .maingoof {
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .noyes {
+        width: auto !important;
+    }
+
+    .goof3 {
+        justify-content: center;
+    }
+
+    .goof1 {
+
+        flex-direction: column;
+    }
+
+    .radiobutton {
+        width: 220px;
+    }
+
+    .radiobutton22 {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .label1 {
+        flex-direction: column;
+    }
+
+    .name {
+        width: 100% !important;
+    }
+
+    .HeaderContent {
+        flex-direction: column;
+    }
+
+    .row3 {
+        flex-direction: column;
+    }
+
+    .textinput {
+        flex-direction: column;
+    }
+
+    .HeaderSection {
+        height: 750px;
+    }
+
+    .HeaderText {
+        text-align: left;
+        width: 100%;
+    }
+
+    .headerbuttoncontainer {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .AgentCarousel {
+        flex-direction: column;
+
+    }
+
+    .AgentBanner {
+        width: 60vw;
+        height: 100vw;
+    }
+
+    .AgentSection {
+        height: auto;
+    }
+
+    .titelbestsellers {
+        width: auto;
+        margin-left: 70px;
+    }
+
+    .PageContent {
+        overflow: visible;
+    }
+
+    .AgentBanner {
+        margin-top: 30px;
+    }
+}
+
+.label3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+.textinput {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vh;
+
+}
+
+input {
+    border: 2px solid #C9D2E0;
+    border-radius: 5px;
+    margin-bottom: 3px;
+
+}
+
+input[type="text"] {
+    width: 23vw;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'DefaultFont'
+}
+
+input[type="email"] {
+    font-family: "DefaultFont";
+    font-size: 1rem;
+    padding: 10px;
+}
+
+input[type="date"] {
+    width: 23vw;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box label {
+    width: 200px;
+}
+
+
+select {
+    border: 2px solid #C9D2E0;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Defaultfont';
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.subject textarea {
+    border: 2px solid #C9D2E0;
+    width: 50vw;
+    height: 100px;
+    margin-top: 10px;
+
+}
+
+.subject label {
+    width: 200px;
+}
+
+.radiobutton1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.radiobutton {
+    display: flex;
+    flex-direction: row;
+}
+
+.radiobuttons h2 {
+    font-size: 1rem;
+    font-family: 'TitleFont';
+}
+
+input[type="radio"] {
+    width: 2%;
+    font-size: 5rem;
+    color: #C9D2E0;
+    background-color: #C9D2E0;
+
+}
+
+.radiobuttons label {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px;
+    font-family: 'DefaultFont';
+}
+
+.voorwaarden {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.textinput button {
+
+    height: 5vh;
+    background-color: #2D3748;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.titelcontact {
+    display: flex;
+    justify-content: center;
+    font-family: 'TitleFont';
+    padding-top: 30;
+}
+
+#chat-window {
+    position: fixed;
+    bottom: 3vh;
+    right: 1vw;
+    font-size: 1.2rem;
+    background-color: #0F1923;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 15vh;
+    box-shadow: -5px -5px 10px rgb(0 0 0 / 0.4);
+    transform: translate(1000px);
+    animation: show-chat 1s forwards 2s;
+    font-family: 'Titlefont';
+    margin-bottom: 135px;
+}
+
+.chat-title {
+    color: white;
+}
+
+@keyframes show-chat {
+    0% {
+        transform: translateX(200px);
+        filter: blur(10px);
+    }
+
+    90% {
+        transform: (-40px);
+    }
+
+    100% {
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes show-conversation {
+    from {
+        height: 0vh;
+    }
+
+    to {
+        height: 40vh;
+    }
+}
+
+#chat-content {
+    background-color: grey;
+    font-size: 0.8rem;
+    flex: 1;
+    padding: 5px;
+    animation: show-conversation;
+}
+
+#chat-question {
+    /* margin-bottom: 2vh; */
+
+}
+
+input#chat-question {
+    width: 15vw;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.xxx {
+    color: #a0abc0;
+
+
+
+}
+
+.xxxx {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.x {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #292929;
+}
+
+.navbutton:hover {
+    background-color: #1a202c;
+    color: white;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+
+
+.navbutton {
+    color: #a2aaba;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+    text-align: center;
+
+
+}
+
+.navbutton1 {
+    color: white;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+    text-align: center;
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbutton1:hover {
+    background-color: #1a202c;
+    color: #FF4655;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 100px;
+
+
+
+}
+
+.navbuttonclass {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "TitleFont";
+}
+
+img {
+    width: 50px;
+    height: 60px;
+}
+
+form {
+    background-color: #FF4655;
+}
+
+.reaverinfo1 {
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.reaverinfo {
+    color: white;
+}
+
+.maingoof {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30;
+    font-family: "DefaultFont";
+    color: white;
+}
+
+.goof1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.img1 img {
+    width: 5vw;
+    height: 4vw;
+    padding: 0vw;
+}
+
+.goof2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.goof3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.thirddiv img {
+
+    width: 5vw;
+
+}
+
+.goofy4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Copyright p {
+    font-family: "TitleFont";
+}
+
+.goofydiv {
+    display: flex;
+    flex-grow: 2;
+
+}
+
+.goofyfooter {
+    padding: 0.5vw;
+}
