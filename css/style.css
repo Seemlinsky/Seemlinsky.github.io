@@ -630,6 +630,7 @@ footer {
 }
 
 nav {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     font-family: "TitleFont";
