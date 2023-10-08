@@ -259,7 +259,7 @@ label {
 
 }
 
-@media only screen and (max-width: 844px) {
+@media screen and (max-width: 992px) {
     .row1 {
         flex-direction: column
     }
