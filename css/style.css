@@ -264,6 +264,15 @@ label {
         flex-direction: column
     }
 
+    .label3 {
+        flex-direction: column !important;
+
+    }
+
+    .woonplaats {
+        width: 100% !important;
+    }
+
     .nav {
         flex-direction: column;
     }
