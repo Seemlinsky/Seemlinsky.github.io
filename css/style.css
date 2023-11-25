@@ -77,17 +77,17 @@ body {
 
 .OmenBannerImage {
     background-position-y: 0%;
-    background-image: url("https://cdn.discordapp.com/attachments/164022184740651008/1160492876694818916/valorant-weapon-skin-elderflame-vandal-variant-3-dark.png?ex=6534dc36&is=65226736&hm=6bf1160bb82b7fae45c96005de4d9b9c41a86f97566f35df84f8605f4777c5f2&");
+    background-image: url("./vandalskins/dragonskin.png");
 }
 
 .ReynaBannerImage {
     background-position-y: 0%;
-    background-image: url("https://cdn.discordapp.com/attachments/164022184740651008/1160494136126885968/valorant-weapon-skin-reaver-vandal-variant-1-red.png?ex=6534dd62&is=65226862&hm=2ba194db7813b2d2568e435d0b6262b35b05776a60ad01eea97b2af2a0631084&");
+    background-image: url("./vandalskins/redreaver.png");
 }
 
 .ViperBannerImage {
     background-position-y: 0%;
-    background-image: url("https://media.discordapp.net/attachments/164022184740651008/1160496037883019424/valorant-weapon-skin-prime-vandal-variant-3-yellow.png?ex=6534df28&is=65226a28&hm=a3667670523243288e3a766fc9d0f5759a025c7cf31acb05d6776d64cd7c8b8d&=&width=375&height=375");
+    background-image: url("./vandalskins/primevandal.png");
 }
 
 .titelbestsellers {
