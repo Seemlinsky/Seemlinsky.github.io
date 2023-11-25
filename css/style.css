@@ -78,17 +78,17 @@ body {
 
 .OmenBannerImage {
     background-position-y: 0%;
-    background-image: url("./vandalskins/dragonskin.png");
+    background-image: url("/vandalskins/dragonskin.png");
 }
 
 .ReynaBannerImage {
     background-position-y: 0%;
-    background-image: url("./vandalskins/redreaver.png");
+    background-image: url("/vandalskins/redreaver.png");
 }
 
 .ViperBannerImage {
     background-position-y: 0%;
-    background-image: url("./vandalskins/primevandal.png");
+    background-image: url("/vandalskins/primevandal.png");
 }
 
 .titelbestsellers {
