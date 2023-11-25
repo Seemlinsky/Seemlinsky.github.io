@@ -15,6 +15,7 @@ body {
     background-image: url("../../assets/valorant_dark.png");
     background-position: center;
     background-position-y: 30%;
+    display: grid;
 }
 
 .HeaderTitle {
